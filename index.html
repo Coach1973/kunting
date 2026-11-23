@@ -266,7 +266,7 @@ footer a{color:var(--sun);font-weight:700}
 /* 新書＋爻晶 */
 #book{background:var(--paper)}
 #book .bk{display:grid;grid-template-columns:340px 1fr;gap:48px;margin-top:44px;align-items:start}
-#book .bk img{width:100%;border-radius:14px;border:2px solid var(--ink);box-shadow:var(--shadow);background:#fff}
+#book .bk img{width:100%;height:auto;border-radius:14px;border:2px solid var(--ink);box-shadow:var(--shadow);background:#fff}
 #book .meta{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 18px;padding:0;list-style:none}
 #book .meta li{background:var(--sun-soft);border:2px solid var(--ink);border-radius:999px;padding:4px 16px;font-size:20px;font-weight:700}
 #book ul.pts{padding-left:1.2em;margin:0 0 18px}#book ul.pts li{margin:0 0 .5em;font-size:22px}
@@ -276,6 +276,9 @@ footer a{color:var(--sun);font-weight:700}
 #yaojing .yj{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:40px}
 #yaojing .yj article{background:var(--paper);border:2px solid var(--ink);border-radius:var(--r);overflow:hidden}
 #yaojing .yj img{width:100%;aspect-ratio:1;object-fit:cover}
+#yaojing .yj-video{position:relative;max-width:960px;margin:36px auto 0}
+#yaojing .yj-video video{width:100%;display:block;border-radius:16px;box-shadow:var(--shadow);background:#000}
+#yaojing .yj-sound{position:absolute;right:14px;bottom:14px;padding:8px 16px;border-radius:999px;border:1px solid rgba(255,255,255,.6);background:rgba(0,0,0,.55);color:#fff;font-size:15px;cursor:pointer}
 #yaojing .yj .in{padding:16px 18px 20px}#yaojing .yj h3{font-size:24px}
 #yaojing .yj .k{font-size:20px;font-weight:700;color:var(--orange-deep)}
 #yaojing .yj p{font-size:20px;line-height:1.6;color:var(--ink-2);margin:6px 0 0}
@@ -437,7 +440,7 @@ footer a{color:var(--sun);font-weight:700}
     <h2>《易經是人類最早的提示詞工程》</h2>
     <p class="lede">三千年前的易經，遇上今天的 AI，我們其實一直在學同一件事——如何面對未知。</p>
     <div class="bk">
-      <img src="images/book-prompt-cover-1122.webp" alt="《易經是人類最早的提示詞工程》書封，昆廷老師著，白象文化出版" width="600" height="600" loading="lazy">
+      <img src="images/book-prompt-cover-1122.webp" alt="《易經是人類最早的提示詞工程》書封，昆廷老師著，白象文化出版" width="600" height="898" loading="lazy">
       <div>
         <ul class="meta"><li>作者：昆廷老師</li><li>出版社：白象文化</li><li>出版日期：2026/12/01（博客來標示「即將上市」）</li><li>定價 320 元・博客來優惠價 9 折 288 元</li></ul>
         <ul class="pts">
@@ -465,29 +468,16 @@ footer a{color:var(--sun);font-weight:700}
   <div class="wrap">
     <div class="kicker"><span class="yao" aria-hidden="true"><i class="b"></i><i></i><i></i><i class="b"></i><i></i><i></i></span>爻晶</div>
     <h2>爻晶｜易經占卜 × AI 解卦 × 水晶手鍊</h2>
-    <p class="lede">爻，是易經的六爻；晶，是水晶。先抽一張易經牌卡，讀懂此刻的卦象，再替你挑出最貼近的水晶，一顆一顆親手串成手鍊。這是「卦象引導」，不是算命。</p>
-    <div class="yj">
-      <article><img src="images/yaojing-b12-1122.webp" alt="金縷・匯聚 手作水晶手鍊，對應澤地萃卦" width="600" height="600" loading="lazy"><div class="in"><span class="k">澤地萃・匯聚</span><h3>金縷・匯聚</h3><p>金髮晶、黃水晶、白水晶。適合準備開啟新團隊、讓人脈與機會靠攏的你。</p></div></article>
-      <article><img src="images/yaojing-b17-1122.webp" alt="溪畔・相印 手作水晶手鍊，對應澤山咸卦" width="600" height="600" loading="lazy"><div class="in"><span class="k">澤山咸・相印</span><h3>溪畔・相印</h3><p>草莓晶、紫水晶、粉晶。適合在意一段關係，想以誠待人的你。</p></div></article>
-      <article><img src="images/yaojing-b09-1122.webp" alt="山徑・穩行 手作水晶手鍊，對應水山蹇卦" width="600" height="600" loading="lazy"><div class="in"><span class="k">水山蹇・穩行</span><h3>山徑・穩行</h3><p>虎眼石、孔雀石、黑曜石。適合卡關時，先穩住腳步再繞路的你。</p></div></article>
-      <article><img src="images/yaojing-b07-1122.webp" alt="紫嵐・謙光 手作水晶手鍊，對應地山謙卦" width="600" height="600" loading="lazy"><div class="in"><span class="k">地山謙・謙光</span><h3>紫嵐・謙光</h3><p>紫水晶、白水晶、茶晶。適合順風時，提醒自己保持謙和的你。</p></div></article>
-      <article><img src="images/yaojing-b05-1122.webp" alt="雷隱・守中 手作水晶手鍊，對應雷山小過卦" width="600" height="600" loading="lazy"><div class="in"><span class="k">雷山小過・守中</span><h3>雷隱・守中</h3><p>黑曜石、草莓晶、紫水晶。適合時機未到，先把小事做好的你。</p></div></article>
+    <div class="yj-video">
+      <video id="yjVideo" src="https://etimmyqq-lab.github.io/crystal/hero.mp4" poster="https://etimmyqq-lab.github.io/crystal/hero-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
+      <button type="button" class="yj-sound" id="yjSoundBtn">♪ 開啟音樂</button>
     </div>
-    <div class="ways">
-      <div><b>牌卡配對（約 15 分鐘）</b>線上或現場抽一張易經牌卡，依卦象解讀處境，再挑對應手鍊。</div>
-      <div><b>心願客製（7–10 個工作天）</b>告訴我們想守護的事，依心願搭配石種與珠徑。</div>
-      <div><b>現貨選購（3 個工作天內出貨）</b>本季 5 款手作手鍊現貨，每款標示建議卦象。</div>
-      <div><b>禮物訂製（7–14 個工作天）</b>替重要的人抽一張卦，把祝福串成一條手鍊。</div>
-    </div>
-    <div class="price">
-      <div><b>NT$6,888 起</b><span>現貨手鍊：5 款任選、標示建議卦象、禮盒包裝</span></div>
-      <div><b>NT$9,888 起</b><span>牌卡配對手鍊：抽卡、解卦、配石一次完成，含 AI 解卦報告</span></div>
-      <div><b>NT$12,888 起</b><span>一對一卦象諮詢：30 分鐘深度解卦、兩條手鍊搭配建議</span></div>
-    </div>
-    <p class="note">AI 負責整理卦辭與爻象、產生解卦報告，最後的解讀與配石由昆廷老師親自判斷。我們不保證任何療效或改運效果；天然礦石每顆紋路與色澤不同，實品與照片可能略有差異。</p>
     <p style="margin-top:22px"><a class="btn btn-sun" href="https://etimmyqq-lab.github.io/crystal/" target="_blank" rel="noopener">看爻晶完整介紹與預約 ↗</a></p>
   </div>
 </section>
+<script>
+(function(){var v=document.getElementById('yjVideo'),b=document.getElementById('yjSoundBtn');if(!v||!b)return;b.addEventListener('click',function(){v.muted=!v.muted;if(v.paused){v.play();}b.textContent=v.muted?'♪ 開啟音樂':'♪ 關閉音樂';});})();
+</script>
 
 <!-- STORY -->
 <section id="story" class="alt">
